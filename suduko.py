@@ -67,7 +67,7 @@ def print_borad(bo):
               print(bo[i][j])
 
            else:
-              print(bo[i][j] , " " , end = "")
+              print(str(bo[i][j]), " " , end = "")
 
 
 
@@ -76,7 +76,7 @@ def find_empty(bo):
         for j in range(len(bo)):
              if  bo[i][j] == 0:
                  return (i,j) #row,col
-    return False
+    return None
 
 print_borad(board)
 solve(board)
