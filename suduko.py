@@ -27,4 +27,10 @@ def print_borad(bo):
               
               
 print_borad(board)
+
+def find_empty(bo):
+    for i in range(len(bo)):
+        for j in range(len(bo)):
+             if  bo[i][j] == 0:
+                 return (i,j) #row,col
            
